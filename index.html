@@ -28,7 +28,7 @@
     <!-- link font -->
 
     <!-- link Java Script -->
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js" defer></script>
   </head>
   <body>
     <header></header>
@@ -37,11 +37,16 @@
       <div class="container container-calc">
         <section class="prize-calc">
           <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO:</h2>
-          <form>
+          <form name="ticket-info">
             <label for="name-surname">Nome Cognome:</label><br />
-            <input type="text" id="name-surname" /><br />
+            <input
+              type="text"
+              id="name-surname"
+              placeholder="Mario Rossi"
+            /><br />
+
             <label for="travel-lenght">Km da percorrere:</label><br />
-            <input type="text" id="travel-lenght" /><br />
+            <input type="text" id="travel-lenght" placeholder="100" /><br />
             <label for="age">Età:</label><br />
             <select id="age">
               <option value="minor">Minorenne</option>
@@ -49,7 +54,7 @@
               <option value="over65">Over 65</option>
             </select>
             <br />
-            <button type="button">Calcola</button>
+            <button type="button" id="calc-button">Calcola</button>
             <input type="reset" value="Annulla" id="reset" />
           </form>
         </section>
@@ -63,7 +68,7 @@
             (numero di km da percorrere ed età) abbiamo calcolato il prezzo del
             viaggio da lei scelto sulla base delle nostre politiche interne
           </h4>
-          <div class="prize">€<span id="finalPrize"></span></div>
+          <div class="prize">€<span id="final-prize"></span></div>
         </section>
       </div>
 
