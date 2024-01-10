@@ -26,11 +26,11 @@ console.log("Il prezzo sulla base dei km è: " + lenghtPrize);
 let finalPrize = 0;
 let finalPrizeFixed = 0;
 
-if (age == "minor") {
+if (age == "Ridotto minorenni") {
   finalPrize = lenghtPrize * 0.8;
   finalPrizeFixed = finalPrize.toFixed(2);
   console.log("Il prezzo viene scontato a: " + finalPrizeFixed);
-} else if (age == "over65") {
+} else if (age == "Ridotto over65") {
   finalPrize = lenghtPrize * 0.6;
   finalPrizeFixed = finalPrize.toFixed(2);
   console.log("Il prezzo viene scontato a: " + finalPrizeFixed);
@@ -43,6 +43,11 @@ if (age == "minor") {
 // STEP 4: stampo il prezzo finale del biglietto
 console.log("Il prezzo finale è di: " + finalPrizeFixed);
 document.getElementById("final-prize").innerText = finalPrizeFixed;
+
+// STEP 5: creo il biglietto del treno
+document.getElementById("user").innerText = UserNameSurname;
+document.getElementById("discount").innerText = age;
+document.getElementById("final-prize-ticket").innerText = finalPrizeFixed;
 
 //BONUS: faccio in modo che cliccando sul bottone "Calcola" appaia il biglietto
 calcButton.addEventListener("click", function () {});

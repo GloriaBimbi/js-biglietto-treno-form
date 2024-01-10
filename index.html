@@ -49,9 +49,9 @@
             <input type="text" id="travel-lenght" placeholder="100" /><br />
             <label for="age">Età:</label><br />
             <select id="age">
-              <option value="minor">Minorenne</option>
-              <option value="standard">Maggiorenne</option>
-              <option value="over65">Over 65</option>
+              <option value="Ridotto minorenni">Minorenne</option>
+              <option value="Standard">Maggiorenne</option>
+              <option value="Ridotto over65">Over 65</option>
             </select>
             <br />
             <button type="button" id="calc-button">Calcola</button>
@@ -92,11 +92,11 @@
               </div>
               <div class="col-6">
                 <h5>Passeggero:</h5>
-                <span class="user"></span>
-                <h5>Offerta:</h5>
-                <span class="discount"></span>
+                <span id="user"></span>
+                <h5>Tipo di biglietto:</h5>
+                <span id="discount"></span>
                 <h5>Prezzo:</h5>
-                <span class="final-prize"></span>
+                <span>€ <span id="final-prize-ticket"></span></span>
               </div>
             </div>
           </div>
