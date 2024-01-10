@@ -1,32 +1,79 @@
-/* RESET
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* general */
+body {
+  background-color: #001533;
+  margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
+.container {
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(73, 73, 71, 0.822);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 50px 100px;
 }
 
-ul {
-  list-style: none;
+/* calc prize section */
+.container-calc {
 }
 
-li {
+.prize-calc select {
+  margin-bottom: 30px;
+}
+
+h2,
+.prize-calc input {
+  margin-bottom: 20px;
+}
+
+.prize-calc button {
+  background-color: lightgreen;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+/* prize section */
+.container-prize {
+}
+
+h4 {
+  color: rgba(255, 255, 255, 0.437);
+}
+
+.prize {
+  color: #001533;
+  font-size: 50px;
+  padding: 10px 20px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* ticket section */
+.ticket {
+  background-color: #001533;
+  padding: 50px;
+  min-width: 80%;
+  border-radius: 20px;
+}
+
+.ticket-section img {
+  width: 100px;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.ticket .col-6 h5 {
+  color: rgb(56, 56, 126);
+}
+
+.ticket .col-6 span {
+  margin-bottom: 20px;
   display: inline-block;
 }
-
-a {
-  color: inherit;
-}
-
-/* UTILS */
-
-/* .container {
-  max-width: 1080px;
-  padding: 0;
-}
-
-body {
-} */
